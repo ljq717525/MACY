@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>海淘网</title>
+<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	
+	<div class="box1">
+		<a href=""><img src="img/b1.jpg"/></a>
+		<a href=""><img src="img/b2.jpg"/></a>
+		<a href=""><img src="img/b3.jpg"/></a>
+		<a href=""><img src="img/b4.jpg"/></a>
+	</div>
+	<div class="box2">
+		<a href=""><img src="img/b5.jpg"/></a>
+		<a href=""><img src="img/b6.jpg"/></a>
+	</div>
+	<!--header-->
+	<div class="header">
+		<div class="head">
+			<a href="index.html"><img class="logol" src="img/logo.png"/></a>
+			
+			<div class="btns">
+				<input class="sousuo"  value="" />
+				<input class="btn" type="text" placeholder="点击搜索产品，品牌及相关词"/>
+				<p>
+					<a href=""><span>美国同价Michael Kors</span></a>
+					<a href=""><span>Karen Scott</span></a>
+					<a href=""><span>Kate Spade</span></a>
+				</p>
+			</div>
+			
+			<div class="reg">
+				<a href=""><img class="imgs" src="img/gwd.jpg"/><span>购物袋</span></a>
+				<a href=""><img class="imgs" src="img/dl.jpg"/><span>登录</span></a>
+				<a href=""><img class="imgs" src="img/sx.jpg"/><span>注册</span></a>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--menu-->
+	<div class="menu">
+		<div class="menus">
+			<div class="menu1">
+				<ul id="ulid">
+					<li>
+						<h5>女士</h5>
+						<div id="madam">
+							<div id="madam1">
+								<a href="">包类</a>
+								<a href="">上衣</a>
+								<a href="">裤装</a>
+								<a href="">鞋靴</a>
+								<a href="">配饰</a>
+								<a href="">裙装</a>
+								<a href="">内衣</a>
+								<a href="">泳装</a>
+							</div>
+							<div id="madam2">
+								
+							</div>
+						</div>
+					</li>
+					<li>
+						<h5>男士</h5>
+						<div id="madam">
+							<div id="madam1">
+								<a href="">上衣</a>
+								<a href="">裤装</a>
+								<a href="">鞋靴</a>
+								<a href="">配饰</a>	
+								<a href="">包类</a>
+								<a href="">内衣</a>
+							
+							</div>
+						</div>
+					</li>
+					<li>
+						<h5>儿童</h5>
+						<div id="madam"><div id="madam1">
+								<a href="">婴儿</a>
+								<a href="">男童</a>
+								<a href="">女童</a>
+								<a href="">婴儿用品</a>
+								<a href="">儿童玩具</a>
+							</div></div>
+					</li>
+					<li>
+						<h5>家居生活</h5>
+						<div id="madam"><div id="madam1">
+								<a href="">卫浴用品</a>
+								<a href="">卧室用品</a>
+								<a href="">厨房用品</a>
+								<a href="">旅游箱包</a>
+								<a href="">家庭用品</a>
+								<a href="">文具</a>
+								<a href="">数码配件</a>
+								<a href="">运动</a>
+							</div></div>
+					</li>
+				</ul>
+			</div>
+<script type="text/javascript">
+
+
+function TabCard(obj){
+	//数组
+	this.tabDoms = obj.tabDoms;	
+	this.initEvent();
+}
+
+TabCard.prototype.initEvent= function(){
+	let obj = this;
+	for(let i=0;i<this.tabDoms.length;i++){
+		this.tabDoms[i].onmousemove = function(){	
+			//循环每一个h3
+			for(let j=0;j<obj.tabDoms.length;j++){
+				//把当前h3的弟弟
+				obj.tabDoms[j].nextElementSibling.style.display = "none";
+				
+			}
+			this.nextElementSibling.style.display = "block";
+			
+		}
+	}
+
+}
+
+
+new TabCard({
+	
+	"tabDoms":document.getElementsByTagName("h5"),
+	
+})
+
+</script>
+			
+			<div class="menu2">
+				<a href="">搭配</a>
+				<a href="">品牌</a>
+			</div>
+		</div>
+	</div>
+	
+	<!--slide-->
+	<div id="slide">
+		
+	</div>
+	
+	
+	<!--part-->
+	<div class="part">
+		<p></p>
+		<img src="img/fsjj.jpg"/>
+		<p></p>
+	</div>
+	
+	<div id="imgs1">
+		<img src="img/2.jpg" />
+	</div>
+	
+	<div class="part">
+		<p></p>
+		<img src="img/cdys.jpg"/>
+		<p></p>
+	</div>
+	
+	
+	<div id="imgs2">
+		<img src="img/3.jpg" />
+	</div>
+	
+	<!--conter-->
+	<div class="conter">
+		<div><img src="img/01(2).jpg"/><p>Betsey Johnson 鞋子</p></div>
+		<div><img src="img/01(3).jpg"/><p>Jessica Howard 袜子</p></div>
+		<div><img src="img/01(4).jpg"/><p>INC International Concepts 高跟鞋</p></div>
+		<div><img src="img/01(5).jpg"/><p>INC International Concepts 背包</p></div>
+		<div><img src="img/01(6).jpg"/><p>Jessica Howard 包包</p></div>
+	</div>
+	
+	<div id="imgs2">
+		<img src="img/4.jpg" />
+	</div>
+	
+	<div class="conter">
+		<div><img src="img/01(2).jpg"/><p>Betsey Johnson 鞋子</p></div>
+		<div><img src="img/01(3).jpg"/><p>Jessica Howard 袜子</p></div>
+		<div><img src="img/01(4).jpg"/><p>INC International Concepts 高跟鞋</p></div>
+		<div><img src="img/01(5).jpg"/><p>INC International Concepts 背包</p></div>
+		<div><img src="img/01(6).jpg"/><p>Jessica Howard 包包</p></div>
+	</div>
+	
+	<div class="part">
+		<p></p>
+		<img src="img/jp.jpg"/>
+		<p></p>
+	</div>
+	
+<!--conter2-->	
+	<div id="conter2">
+		<div id="conter-l"><img src="img/l.jpg"/></div>
+		<div id="conter-r"><img src="img/r.jpg"/></div>
+	</div>
+	
+<!--adv-->
+	<div id="adv">
+		
+	</div>
+	
+<script type="text/javascript">
+	for(let i=1;i<=12;i++){
+		let imgdom=document.createElement("img");
+		imgdom.src="img/a"+i+".png";
+		document.getElementById("adv").appendChild(imgdom);
+	}
+
+</script>
+	
+<!--conter-->	
+	<div id="conter3">
+		
+	</div>
+	
+<!--foot-->
+	<div id="foot">
+		<div id="z-foot"></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/Slider03.js" ></script>
+<script type="text/javascript">
+	$(function(){
+	$("#slide").slider(
+					{
+						$boxDom : $("#slide"),
+						width : 970,
+						height : 390,
+						imgs : ["img/001.jpg","img/002.jpg","img/2.jpg"],
+						currOrd : 1,
+						timeSpace : 3000,
+						btn : {
+							width:10,
+							height:10,
+							color:"gray",
+							highColor:"red",
+							right:450,
+							bottom:10,
+							isCircle:true
+						}
+					}
+);
+});
+</script>
