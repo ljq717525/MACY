@@ -1,0 +1,21 @@
+html,body,p,div,table,ul,ol,li,dl,dt,dd,tr,td,th,form,input,h1,h2,h3,h4,h5,h6,hr,fieldset,legend{
+	margin:0;
+	padding:0;
+	
+}
+body{
+	font-family:"微软雅黑",Arial;
+}
+a{
+	text-decoration:none;	
+}
+img{
+	border:none;
+}
+ul li{
+	list-style:none;
+}
+p,table,ul,ol,li,dl,dt,dd,tr,td,th,form,input,h1,h2,h3,h4,h5,h6,hr,fieldset,legend,img{
+	cursor: pointer;
+	
+}
